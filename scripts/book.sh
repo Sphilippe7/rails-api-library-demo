@@ -8,12 +8,12 @@ curl --include --request POST http://localhost:3000/books \
     }
   }'
 
-curl --include --request PATCH http://localhost:3000/books/4 \
+curl --include --request PATCH http://localhost:3000/books/3 \
   --header "Content-Type: application/json" \
   --data '{
     "book": {
       "title": "Of Staggering Genius",
-      "author": "Lauren"
+      "author_id": 6
     }
   }'
 
