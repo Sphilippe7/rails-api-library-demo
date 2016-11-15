@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   resources :users, only: [:index, :show]
 
   # Books routes
-  get '/books', to: 'books#index'
+  resources :books, only: [:index, :show, :create, :update, :destroy]
 end
