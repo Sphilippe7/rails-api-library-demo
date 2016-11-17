@@ -16,3 +16,39 @@
 #                password: 'abc123',
 #                password_confirmation: nil)
 # end
+
+# Book.create(
+#   [
+#     { title: 'There and back again', author: 'Bilbo Baggins' },
+#     { title: '50 Shades of GA', author: 'Some Guy from Bahstahn' },
+#     { title: 'Antony Potter and the Prisoner of WDI' },
+#     { title: 'Example Title Numbah Two, Kid!', author: 'Big Papi' },
+#     { title: 'A Wacky Title' },
+#     { title: 'One Fish, Two Fish, Red Fish, Blue Fish', author: 'Dr Seuss' },
+#     { title: 'The BFG', author: 'Roald Dahl' },
+#     { title: 'Matilda', author: 'Roald Dahl' }
+#   ]
+# )
+
+Author.create(
+  [
+    { given_name: 'Roald', family_name: 'Dahl' },
+    { given_name: 'Dr', family_name: 'Seuss' },
+    { given_name: 'Bilbo', family_name: 'Baggins' },
+    { given_name: 'Big', family_name: 'Papi' },
+    { given_name: 'Some Guy From', family_name: 'Bahstahn' }
+  ]
+)
+
+# Book.create(
+#   [
+#     { title: 'There and back again', author_id: 3 },
+#     { title: '50 Shades of GA', author_id: 4 },
+#     { title: 'Antony Potter and the Prisoner of WDI' },
+#     { title: 'Example Title Numbah Two, Kid!', author_id: 5 },
+#     { title: 'A Wacky Title' },
+#     { title: 'One Fish, Two Fish, Red Fish, Blue Fish', author_id: 2 },
+#     { title: 'The BFG', author_id: 1 },
+#     { title: 'Matilda', author_id: 1 }
+#   ]
+# )
