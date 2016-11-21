@@ -1,14 +1,6 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :update, :destroy]
 
-  def set_book
-    @book = Book.find(params[:id])
-  end
-
-  def book_params
-    params.require(:book).permit(:title, :author)
-  end
-
   def index
     @books = Book.all
 
@@ -16,7 +8,7 @@ class BooksController < ApplicationController
   end
 
   def show
-    render json: Book.find(params[:id])
+    render json: @book
   end
 
   def create
@@ -41,5 +33,15 @@ class BooksController < ApplicationController
     @book.destroy
 
     head :no_content
+  end
+
+  private
+
+  def set_book
+    @book = Book.find(params[:id])
+  end
+
+  def book_params
+    params.require(:book).permit(:title, :author)
   end
 end

@@ -40,15 +40,15 @@ Author.create(
   ]
 )
 
-# Book.create(
-#   [
-#     { title: 'There and back again', author_id: 3 },
-#     { title: '50 Shades of GA', author_id: 4 },
-#     { title: 'Antony Potter and the Prisoner of WDI' },
-#     { title: 'Example Title Numbah Two, Kid!', author_id: 5 },
-#     { title: 'A Wacky Title' },
-#     { title: 'One Fish, Two Fish, Red Fish, Blue Fish', author_id: 2 },
-#     { title: 'The BFG', author_id: 1 },
-#     { title: 'Matilda', author_id: 1 }
-#   ]
-# )
+Book.create(
+  [
+    { title: 'There and back again', author_id: 3 },
+    { title: '50 Shades of GA', author_id: 4 },
+    { title: 'Antony Potter and the Prisoner of WDI' },
+    { title: 'Example Title Numbah Two, Kid!', author_id: 5 },
+    { title: 'A Wacky Title' },
+    { title: 'One Fish, Two Fish, Red Fish, Blue Fish', author_id: 2 },
+    { title: 'The BFG', author_id: 1 },
+    { title: 'Matilda', author_id: 1 }
+  ]
+)
